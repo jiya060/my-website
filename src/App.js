@@ -104,7 +104,7 @@ function App() {
                   This article explores the role that our gut microbiome plays
                   on the efficacy of immunotherapies. It explains in detail what
                   the microbiome is, different types of immunotherapies and
-                  their process, the link between the two, and if there is a way
+                  their process, the link between the two, and if there is an innovative way
                   to alter and modulate our gut microbiota.
                 </Text>
               </Box>
