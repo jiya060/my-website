@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import {
   Box,
   Image,
@@ -17,17 +17,14 @@ import {
 
 function FlipCard({ title, imageUrl, notes, undertitle }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [buttonVisible, setButtonVisible] = useState(true);
 
-  const handleButtonClick = useCallback(() => {
+  const handleButtonClick = () => {
     onOpen();
-    setButtonVisible(false);
-  }, [onOpen]);
+  };
 
-  const handleClose = useCallback(() => {
+  const handleClose = () => {
     onClose();
-    setButtonVisible(true);
-  }, [onClose]);
+  };
 
   return (
     <>
