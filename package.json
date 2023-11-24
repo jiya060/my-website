@@ -2,6 +2,8 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jiyasinghal.com/",
+
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.23.3",
     "@babel/plugin-transform-optional-chaining": "^7.23.4",
