@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jiyasinghal.com/",
-
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.23.3",
     "@babel/plugin-transform-optional-chaining": "^7.23.4",
@@ -24,7 +23,7 @@
     "workbox-background-sync": "^6.6.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "*"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
