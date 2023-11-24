@@ -1,3 +1,6 @@
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) {
+}}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
