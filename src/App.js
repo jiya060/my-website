@@ -11,7 +11,6 @@ import { Text } from "@chakra-ui/react";
 import { Stack, StackDivider } from "@chakra-ui/react";
 import { HStack, VStack } from "@chakra-ui/react";
 import EmbeddedPDFs from "./componentss/EmbeddedPDFs";
-import { Component } from "react";
 
 function App() {
   return (

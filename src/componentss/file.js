@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function FlipCard({ title, imageUrl, notes, undertitle }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [isButtonVisible, setButtonVisible] = useState(true);
+  const [ setButtonVisible] = useState(true);
 
   const handleButtonClick = () => {
     onOpen();
