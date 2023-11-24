@@ -1,19 +1,33 @@
-import { Box, Image, Text, VStack, Center, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, useDisclosure } from "@chakra-ui/react";
-import { useState } from "react";
+import React, { useState, useCallback } from "react";
+import {
+  Box,
+  Image,
+  Text,
+  VStack,
+  Center,
+  Button,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 function FlipCard({ title, imageUrl, notes, undertitle }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [buttonVisible, setButtonVisible] = useState(true);
 
-  const handleButtonClick = () => {
+  const handleButtonClick = useCallback(() => {
     onOpen();
     setButtonVisible(false);
-  };
+  }, [onOpen]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     onClose();
     setButtonVisible(true);
-  };
+  }, [onClose]);
 
   return (
     <>
