@@ -9,7 +9,7 @@ function FlipCard({ title, imageUrl, notes, undertitle }) {
     onOpen();
     setButtonVisible(false);
   };
-
+  
   const handleClose = () => {
     onClose();
     setButtonVisible(true);
