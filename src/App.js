@@ -9,7 +9,6 @@ import { Link } from "@chakra-ui/react";
 import { Card, CardBody } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Stack, StackDivider } from "@chakra-ui/react";
-import { HStack, VStack } from "@chakra-ui/react";
 import EmbeddedPDFs from "./componentss/EmbeddedPDFs";
 
 function App() {
@@ -76,6 +75,47 @@ function App() {
               </ListItem>
             </UnorderedList>
           </Center>
+          <Center mt={10}>
+          <Box>
+            <a
+              href="https://www.linkedin.com/in/jiya-singhal-76b74a253/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"  // Replace with the actual path or use an icon library
+                alt="LinkedIn"
+                style={{ width: "35px", height: "35px", marginRight: "25px" }}
+              />
+            </a>
+          </Box>
+          <Box>
+            <a
+              href="https://medium.com/@jiya060"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png"  // Replace with the actual path or use an icon library
+                alt="Medium"
+                style={{ width: "40px", height: "40px", marginRight: "25px" }}
+              />
+            </a>
+          </Box>
+          <Box>
+            <a
+              href="mailto:jiyasinghal06@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"  // Replace with the actual path or use an icon library
+                alt="Gmail"
+                style={{ width: "37px", height: "37px" }}
+              />
+            </a>
+          </Box>
+        </Center>
         </div>
       </div>
       <Divider mt={20} />
@@ -240,36 +280,6 @@ function App() {
 
         </SimpleGrid>
         <Divider mt={10}></Divider>
-        <Heading
-          fontFamily={"Poppins"}
-          as="h4"
-          size="md"
-          mt={10}
-          style={{ textAlign: "left" }}
-          id="contact-me"
-        >
-          Contact Me
-        </Heading>
-
-        <VStack spacing={2} align="start" id="contact-me">
-          <HStack mt={5}>
-            <Link
-              fontFamily={"Poppins"}
-              href="https://www.linkedin.com/in/jiya-singhal-76b74a253/"
-              isExternal
-            >
-              Linkedin
-            </Link>
-          </HStack>
-          <Text fontFamily="Poppins">Email: jiyasinghal06@gmail.com</Text>
-          <Link
-            fontFamily={"Poppins"}
-            href="https://medium.com/@jiya060"
-            isExternal
-          >
-            Medium
-          </Link>
-        </VStack>
       </div>
     </>
   );
