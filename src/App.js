@@ -168,7 +168,7 @@ function App() {
     <AspectRatio ratio={16 / 9}>
       <video width="100%" controls>
         <source src="/Users/jiyasinghal/Documents/Arduino.MP4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video.
       </video>
     </AspectRatio>
   </Box>
