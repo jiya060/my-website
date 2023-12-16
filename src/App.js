@@ -11,8 +11,6 @@ import { Text } from "@chakra-ui/react";
 import { Stack, StackDivider } from "@chakra-ui/react";
 import EmbeddedPDFs from "./componentss/EmbeddedPDFs";
 import {AspectRatio } from "@chakra-ui/react";
-import ReactPlayer from 'react-player';
-
 
 function App() {
   return (
