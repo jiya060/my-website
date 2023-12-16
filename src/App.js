@@ -10,6 +10,9 @@ import { Card, CardBody } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Stack, StackDivider } from "@chakra-ui/react";
 import EmbeddedPDFs from "./componentss/EmbeddedPDFs";
+import {AspectRatio } from "@chakra-ui/react";
+import ReactPlayer from 'react-player';
+
 
 function App() {
   return (
@@ -42,36 +45,28 @@ function App() {
               mt={5}
             >
               <ListItem>
-                I am passionate about solving problems and want to have a
-                positive impact in the world.
+              I have a passion for solving problems, building sustainable solutions and learning as much as I can about things that interest me. So through these pursuits, my aim is to have a positive and meaningful impact in the world. 
               </ListItem>
               <ListItem>
-                Right now, biotechnology is the field that fascinates me the
-                most.
+              Biotechnology is the field I am currently most interested in, and my focus
+              specifically centers on cancer, 
+              immunotherapies, and personalized medicine. I am mostly looking into the
+              potential of leveraging gene editing to modulate the gut microbiome, thereby enhancing the efficacy 
+              of immunotherapies.
               </ListItem>
               <ListItem>
-                Currently, I am super interested in learning about cancer,
-                immunotherapies and personalised medicine. I have been looking
-                more into how nanotechnology and gene editing can be used to
-                modulate the gut microbiome to make immunotherapies more
-                efficient.
+              Recently, I've gotten into learning to use the Arduino. 
+              Currently, I am doing simple projects to learn how it works,
+              but from those, I want to apply the knowledge I gain to build something that can 
+              be meaningful to real-world problems. 
               </ListItem>
               <ListItem>
-                I have started learning Arduino and want to explore how I can
-                build something with it that can solve a problem.
+              Simultaneously, I'm learning UI design skills— as its both
+              enjoyable to do and a valuable skillset I wish to gain.
               </ListItem>
               <ListItem>
-                I have also started to practice UI design as it is something I
-                like to do and a skill I want to learn.
-              </ListItem>
-              <ListItem>
-                Human Longevity. I find it fascinating to learn about what
-                causes us to age and the potential possibilities that can extend
-                our lifespans and even reverse aging.
-              </ListItem>
-              <ListItem>
-                Psychology, as I’m curious about what drives different human
-                behaviours.
+                Psychology is another field I am super curious about, as I often wonder what  
+                drives different human behaviours.
               </ListItem>
             </UnorderedList>
           </Center>
@@ -83,7 +78,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"  // Replace with the actual path or use an icon library
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
                 alt="LinkedIn"
                 style={{ width: "35px", height: "35px", marginRight: "25px" }}
               />
@@ -96,7 +91,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png"  // Replace with the actual path or use an icon library
+                src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png" 
                 alt="Medium"
                 style={{ width: "40px", height: "40px", marginRight: "25px" }}
               />
@@ -109,7 +104,7 @@ function App() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"  // Replace with the actual path or use an icon library
+                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
                 alt="Gmail"
                 style={{ width: "37px", height: "37px" }}
               />
@@ -165,6 +160,19 @@ function App() {
           </CardBody>
         </Card>
         <EmbeddedPDFs></EmbeddedPDFs>
+        <Box>
+      <Heading fontFamily="Poppins" fontSize="xl" mt={20} mb={5} id="video-section">
+        Me Tinkering with the Arduino
+      </Heading>
+      <Box width="50%" mx="auto">
+    <AspectRatio ratio={16 / 9}>
+      <video width="100%" controls>
+        <source src="/Users/jiyasinghal/Documents/Arduino.MP4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </AspectRatio>
+  </Box>
+    </Box>
         <Divider mt={10}></Divider>
         <Heading fontFamily={"Poppins"} mt={20} mb={10} id="book-library">
           Books I've Read
